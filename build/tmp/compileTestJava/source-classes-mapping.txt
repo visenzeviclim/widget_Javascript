@@ -1,0 +1,6 @@
+com/visenze/testautomation/Runner.java
+ com.visenze.testautomation.Runner
+com/visenze/testautomation/stepdef/google/sanity/SanGoogle.java
+ com.visenze.testautomation.stepdef.google.sanity.SanGoogle
+com/visenze/testautomation/stepdef/widget/sanity/SanWidget.java
+ com.visenze.testautomation.stepdef.widget.sanity.SanWidget

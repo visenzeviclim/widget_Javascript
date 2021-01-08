@@ -1,0 +1,30 @@
+com/visenze/mainautomation/tasks/SearchForArticle.java
+ com.visenze.mainautomation.tasks.SearchForArticle
+com/visenze/mainautomation/utils/ResourceFileUtils.java
+ com.visenze.mainautomation.utils.ResourceFileUtils
+com/visenze/mainautomation/tasks/Navigate.java
+ com.visenze.mainautomation.tasks.Navigate
+com/visenze/mainautomation/tasks/OpenSBIImage.java
+ com.visenze.mainautomation.tasks.OpenSBIImage
+com/visenze/mainautomation/pages/Visenze/SearchByImagePage.java
+ com.visenze.mainautomation.pages.Visenze.SearchByImagePage
+com/visenze/mainautomation/pages/Google/Google_Main_Page.java
+ com.visenze.mainautomation.pages.Google.Google_Main_Page
+com/visenze/mainautomation/tasks/TypeIntoGoogleSearchBar.java
+ com.visenze.mainautomation.tasks.TypeIntoGoogleSearchBar
+com/visenze/mainautomation/utils/WaitUtils.java
+ com.visenze.mainautomation.utils.WaitUtils
+com/visenze/mainautomation/pages/Visenze/FindSimilarProdDiagPage.java
+ com.visenze.mainautomation.pages.Visenze.FindSimilarProdDiagPage
+com/visenze/mainautomation/pages/Google/Google_Result_Page.java
+ com.visenze.mainautomation.pages.Google.Google_Result_Page
+com/visenze/mainautomation/questions/widget/ForTheWidget.java
+ com.visenze.mainautomation.questions.widget.ForTheWidget
+com/visenze/mainautomation/tasks/UploadPhotoOnLocalPC.java
+ com.visenze.mainautomation.tasks.UploadPhotoOnLocalPC
+com/visenze/mainautomation/action/FromPCFindAndUploadImage.java
+ com.visenze.mainautomation.action.FromPCFindAndUploadImage
+com/visenze/mainautomation/action/WaitFor.java
+ com.visenze.mainautomation.action.WaitFor
+com/visenze/mainautomation/questions/google/ForTheResultPage.java
+ com.visenze.mainautomation.questions.google.ForTheResultPage

@@ -1,0 +1,59 @@
+defaultTasks 'clean', 'test', 'aggregate'
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.3.6")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+apply from: "$rootDir/gradle/libraries.gradle"
+
+// JDK 8
+compileJava{
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+dependencies {
+     implementation libs.logback,
+            libs.main.serenity.screenplay,
+            libs.main.serenity.screenplayWebdriver,
+            libs.main.serenity.screenplayRest
+
+    testImplementation libs.test.serenity.core,
+            libs.main.serenity.screenplay,
+            libs.main.serenity.screenplayWebdriver,
+            libs.main.serenity.screenplayRest,
+            libs.test.serenity.junit,
+            libs.test.serenity.cucumber6,
+            libs.test.junit,
+            libs.test.assertj
+
+
+}
+
+clean.doFirst{
+    println "Commence deleting ${rootDir}/target/"
+    delete "${rootDir}/target/"
+    println "${rootDir}/target/ has been deleted"
+}
+
+test {
+    println "Commence Test Run !!!!"
+}
+
+//gradle.startParameter.continueOnFailure = true
+
+test.finalizedBy(aggregate)
